@@ -1,0 +1,72 @@
+/* Body styling for a black background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black; /* Set the entire background to black */
+
+}
+
+/* Glow button styling */
+.svg_button_tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 22px 22px;
+    background: transparent;
+    color: #dddddd;
+    border: 2px solid crimson;
+    font-size: 14px; /* size of font inside button  */
+    cursor: pointer; /* cursor will change to pointer on hover */
+    border-radius: 14px; /* giving it round corners */
+    font-weight: bold; /* making the text bold */
+    transition: all 0.3s ease; /* at last, giving a smooth transition */
+
+
+}
+
+/* MAIN STYLING FOR WHEN BUTTON IS HOVERED UPON*/
+.svg_button_tag:hover {
+    background-color: crimson; /* entire button color changes from color of background to crimson */
+    color: black; /* text color becomes black  */
+    box-shadow: 0 0 15px crimson, 0 0 25px crimson; /* glowing effect for the hovered button  */
+    transform: scale(1.1); /* size of button increases slightly */
+}
+
+/* SVG icon styling */
+.svg_tag {
+    /* SETTING WIDTH AND HEIGHT OF SVG */
+    width:40px;
+    height: 40px;
+    /* setting up the viewbox for it */
+    viewBox: 0 0 20 20;
+    transition: transform 0.2s ease-in-out; /* giving it a smooth transition */
+}
+
+/* WHEN THE SVG BUTTON IS HOVERED UPON */
+.svg_button_tag:hover .svg_tag {
+    transform: scale(1.3);   /* the size of the button changed....gets increased by 30% */
+
+}
+
+/* STYLING SVG RECTANGLE */
+.rect {
+    fill: white;
+    stroke: crimson;
+    stroke-width: 3;
+    right: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s ease;
+}
+
+.svg_button_tag:hover .svg_tag .rect{
+    fill: black; /* color changes to back to create contrast */
+}
+
+
+
